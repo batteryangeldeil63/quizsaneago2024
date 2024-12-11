@@ -2,31 +2,31 @@ const STORE = {
   questions: {
     accessibility: [
       {
-        question: "Onde você pode emitir a guia de pagamento para a 2ª via?",
-        code: `&lt;html lang="en"&gt;`,
+        question: "Qual é o site oficial da Saneago?",
+        code: `Online`,
         answers: [
-          "Na agência bancária",
-          "No site oficial do Detran-MG",
-          "No posto de gasolina",
-          "Por e-mail diretamente ao Detran",
+          "www.saneago.com.br",
+          "www.segundaviacontasaneago.com",
+          "www.saneago.gov.br",
+          "www.contasaneago.net",
         ],
-        correctAnswer: "No site oficial do Detran-MG",
+        correctAnswer: "www.saneago.com.br",
       },
       {
         question:
-          "Qual o primeiro passo para solicitar a 2ª via de um documento no Detran-MG?",
-        code: `&lt;div role="progressbar"&gt;&lt;/div&gt;`,
+          "Qual o primeiro passo para solicitar a 2ª via de um documento no Saneago",
+        code: `Online`,
         answers: [
-          "Ligar para o Detran",
-          "Acessar o site do Detran-MG",
+          "Ligar para o Saneago",
+          "Acessar o site do Saneago",
           "Ir diretamente ao banco",
           "Pedir ajuda em um despachante",
         ],
-        correctAnswer: "Acessar o site do Detran",
+        correctAnswer: "Acessar o site do Saneago",
       },
       {
         question:
-          "Qual documento é necessário para solicitar a 2ª via do Certificado de Registro e Licenciamento de Veículo (CRLV)?",
+          "Qual documento é necessário para solicitar a 2ª via do Certificado de Registro e Licenciamento de Veículo (2ª Via)?",
         code: ``,
         answers: [
           "Título de eleitor",
@@ -38,19 +38,19 @@ const STORE = {
       },
       {
         question:
-          "Qual a principal forma de pagamento aceita para a 2ª via no Detran-MG?",
+          "Qual a principal forma de pagamento aceita para a 2ª via no Saneago",
         code: ``,
         answers: [
           "Dinheiro em espécie",
           "Transferência por aplicativo",
           "Guia emitida e paga no banco",
-          "Pix direto ao Detran",
+          "Pix direto ao Saneago",
         ],
-        correctAnswer: "Pix direto ao Detran",
+        correctAnswer: "Pix direto ao Saneago",
       },
       {
         question:
-          "Quais são os bancos autorizados para pagamento de taxas do Detran-MG?",
+          "Quais são os bancos autorizados para pagamento de taxas do Saneago",
         code: ``,
         answers: [
           "Bradesco, Santander e Itaú",
@@ -63,61 +63,81 @@ const STORE = {
     ],
     arrays: [
       {
-        question: "É possível solicitar a 2ª via do CRLV de forma online?",
-        code: `let arr = [2,4,6,8,10]`,
-        answers: ["arr[4]", "arr[2]", "arr[3]", "arr[1]"],
-        correctAnswer: "arr[1]",
-      },
-      {
-        question: "How would we add a value to the end of the array?",
-        code: `let arr = 
-['a','b','c','d','e']`,
+        question:
+          "Qual é o valor médio da taxa para emitir a 2ª via do 2ª Via em MG?",
+        code: `Calculo`,
         answers: [
-          "arr.pop('f')",
-          "arr.append('f')",
-          "arr.add('f')",
-          "arr.push('f')",
+          "Isento de cobrança",
+          "Entre R$ 20 e R$ 40",
+          "Entre R$ 50 e R$ 100",
+          "Mais de R$ 150",
         ],
-        correctAnswer: "arr.push('f')",
+        correctAnswer: "Isento de cobrança",
       },
       {
         question:
-          "What would we use to remove and return the last value of the array?",
-        code: `let arr = 
-[3,1,4,1,5,9]`,
-        answers: ["arr.remove(9)", "arr.grep('9')", "arr.shift()", "arr.pop()"],
-        correctAnswer: "arr.pop()",
+          "Se o veículo tiver multas pendentes, o que acontece ao tentar solicitar a 2ª via?",
+        code: `Online`,
+        answers: [
+          "A solicitação é bloqueada até que as multas sejam quitadas",
+          "A 2ª via é emitida normalmente",
+          "As multas são adicionadas à guia da 2ª via",
+          "Um aviso de advertência é emitido",
+        ],
+        correctAnswer:
+          "A solicitação é bloqueada até que as multas sejam quitadas",
       },
       {
-        question: "How would we find the length of the following array?",
-        code: `let arr = 
-[23,1,943,81,-52,3.14159]`,
-        answers: ["arr.depth()", "arr.index", "arr.shift()", "arr.length"],
-        correctAnswer: "arr.length",
+        question:
+          "É necessário agendamento para retirar a 2ª via do documento presencialmente?",
+        code: `Online`,
+        answers: [
+          "Sim, o agendamento é obrigatório",
+          "Não, basta comparecer ao Saneago",
+          "Apenas para veículos registrados em Belo Horizonte",
+          "Não, mas é recomendável para evitar filas",
+        ],
+        correctAnswer: "Sim, o agendamento é obrigatório",
       },
       {
-        question: "Which index is the value 9 at in the following array?",
-        code: `let arr = 
-[23,1,943,81,9,3.14159]`,
-        answers: ["2", "3", "5", "4"],
-        correctAnswer: "4",
+        question: "Qual o site oficial para acessar serviços do Saneago",
+        code: `Online`,
+        answers: [
+          "www.Saneago.gov.br",
+          "www.Saneago.mg.gov.br",
+          "www.servicos.mg.Saneago.br",
+          "www.cnhmg.com.br",
+        ],
+        correctAnswer: "www.Saneago.mg.gov.br",
+      },
+      {
+        question:
+          "Para que tipo de documento pode ser solicitada a 2ª via pelo Saneago",
+        code: `Motorista`,
+        answers: [
+          "Apenas CNH",
+          "Somente o 2ª Via",
+          "CNH e 2ª Via",
+          "Apenas documentos de terceiros",
+        ],
+        correctAnswer: "CNH e 2ª Via",
       },
     ],
     elements: [
       {
-        question: "É possível solicitar a 2ª via do CRLV de forma online?",
+        question: "É possível solicitar a 2ª via do 2ª Via de forma online?",
         code: ``,
         answers: [
           "Não, apenas presencialmente",
-          "Sim, pelo site do Detran-MG",
+          "Sim, pelo site do Saneago",
           "Sim, por mensagem no WhatsApp",
           "Não, apenas por despachantes",
         ],
-        correctAnswer: "Sim, pelo site do Detran-MG",
+        correctAnswer: "Sim, pelo site do Saneago",
       },
       {
         question:
-          "Após o pagamento da guia, quanto tempo demora para a emissão da 2ª via do CRLV?",
+          "Após o pagamento da guia, quanto tempo demora para a emissão da 2ª via do 2ª Via?",
         code: ``,
         answers: [
           "Imediatamente após o pagamento",
@@ -128,12 +148,16 @@ const STORE = {
         correctAnswer: "Imediatamente após o pagamento",
       },
       {
-        question: "pular",
-        code: `
-&lt;p&gt;The quick brown fox... 
-&lt;tag&gt;jumped over the lazy dogs&lt;/p&gt;`,
-        answers: ["&lt;break&gt;", "&lt;hr&gt;", "&lt;lb&gt;", "&lt;br&gt;"],
-        correctAnswer: "&lt;br&gt;",
+        question:
+          "Qual é o valor médio da taxa para emitir a 2ª via do 2ª Via em MG?",
+        code: `Calculo`,
+        answers: [
+          "Isento de cobrança",
+          "Entre R$ 20 e R$ 40",
+          "Entre R$ 50 e R$ 100",
+          "Mais de R$ 150",
+        ],
+        correctAnswer: "Isento de cobrança",
       },
       {
         question:
@@ -142,16 +166,15 @@ const STORE = {
         answers: [
           "Na agência bancária onde pagou a taxa",
           "Em qualquer posto de gasolina autorizado",
-          "Na unidade do Detran escolhida durante a solicitação",
+          "Na unidade do Saneago escolhida durante a solicitação",
           "Entregue diretamente pelo carteiro",
         ],
-        correctAnswer: "Na unidade do Detran escolhida durante a solicitação",
+        correctAnswer: "Na unidade do Saneago escolhida durante a solicitação",
       },
       {
-        question: "Qual é a penalidade por dirigir sem portar o CRLV válido??",
-        code: `&lt;table&gt;
- ... 
-&lt;/table&gt;`,
+        question:
+          "Qual é a penalidade por dirigir sem portar o 2ª Via válido??",
+        code: `Penalidade`,
         answers: [
           "Multa leve e apreensão do veículo",
           "Multa grave e pontos na carteira",
@@ -176,437 +199,413 @@ const STORE = {
       },
       {
         question:
-          "Qual o primeiro passo para solicitar a 2ª via de um documento no Detran-MG?",
+          "Qual o primeiro passo para solicitar a 2ª via de um documento no Saneago",
         code: `.flex-container {
  ...
 }`,
         answers: [
-          "Ligar para o Detran",
-          "Acessar o site do Detran-MG",
+          "Ligar para o Saneago",
+          "Acessar o site do Saneago",
           "Ir diretamente ao banco",
           "Pedir ajuda em um despachante",
         ],
-        correctAnswer: "Acessar o site do Detran-MG",
+        correctAnswer: "Acessar o site do Saneago",
       },
       {
         question:
-          "Qual o primeiro passo para solicitar a 2ª via de um documento no Detran-MG?",
-        code: `.flex-item {
- flex-basis: 20px;
-}`,
+          "Qual o primeiro passo para solicitar a 2ª via de um documento no Saneago",
+        code: `Acesso`,
         answers: [
-          "Ligar para o Detran",
-          "Acessar o site do Detran-MG",
+          "Ligar para o Saneago",
+          "Acessar o site do Saneago",
           "Ir diretamente ao banco",
           "Pedir ajuda em um despachante",
         ],
-        correctAnswer: "Acessar o site do Detran-MG",
-      },
-      {
-        question: "Which values are we able to use for flex-direction?",
-        code: `.flex-container {
- flex-direction: ...
-}`,
-        answers: [
-          "flex-start, flex-end, space-between, space-around",
-          "start, center, end, space-evenly",
-          "horizontal, vertical, reverse-horizontal, reverse-vertical",
-          "row, row-reverse, column, column-reverse",
-        ],
-        correctAnswer: "row, row-reverse, column, column-reverse",
+        correctAnswer: "Acessar o site do Saneago",
       },
       {
         question:
-          "What does the css property order for flex items allow you to do?",
-        code: `.flex-item {
- order: ...
-}`,
+          "Para onde entram em contato caso haja problemas com a guia de pagamento?",
+        code: ``,
         answers: [
-          "Specify the direction that flex items appear",
-          "Define when each flex item is loaded",
-          "Sort flex items by different values (alphabetical, numerical)",
-          "Specify which order the flex items appear",
+          "Diretamente no banco autorizado",
+          "No telefone da Ouvidoria do Saneago",
+          "Por meio de um despachante",
+          "No aplicativo do governo estadual",
         ],
-        correctAnswer: "Specify which order the flex items appear",
+        correctAnswer: "No telefone da Ouvidoria do Saneago",
+      },
+      {
+        question:
+          "Qual o nome do sistema que permite acessar o 2ª Via digital?",
+        code: `-e`,
+        answers: [
+          "2ª Via-e",
+          "SaneagoDigital",
+          "CNH Digital",
+          "CarteiraVeicular",
+        ],
+        correctAnswer: "2ª Via-e",
       },
     ],
     forms: [
       {
         question:
-          "What are considered the two most important attributes for a form?",
-        code: `
-&lt;form ...&gt;
-&lt;/form&gt;`,
+          "Onde encontrar o código RENAVAM necessário para emitir a 2ª via?",
+        code: ``,
         answers: [
-          "lang, process",
-          "before, after",
-          "id, class",
-          "method, action",
+          "No 2ª Via antigo ou no site do Saneago",
+          "Apenas no documento original",
+          "No banco autorizado",
+          "Na placa do veículo",
         ],
-        correctAnswer: "method, action",
+        correctAnswer: "No 2ª Via antigo ou no site do Saneago",
       },
       {
-        question: "What are the some of the most popular &lt;input&gt; types?",
-        code: `&lt;input type='...'&gt;`,
+        question: "Quem deve pagar a taxa de emissão da 2ª via?",
+        code: ``,
         answers: [
-          "css, target, label",
-          "auto, keyboard, mouse",
-          "text, include, exclude",
-          "text, checkbox, button",
+          "Apenas o proprietário registrado",
+          "Qualquer pessoa que tenha o número do RENAVAM",
+          "Apenas quem recebeu multas recentes",
+          "Apenas motoristas profissionais",
         ],
-        correctAnswer: "text, checkbox, button",
+        correctAnswer: "Apenas o proprietário registrado",
       },
       {
         question:
-          "Which attribute of an input does the label for attribute relate to?",
-        code: `&lt;label for=...&gt;&lt;/label&gt;
-&lt;input ...&gt;`,
-        answers: ["role", "value", "type", "id"],
-        correctAnswer: "id",
+          "Caso o veículo tenha financiamento ativo, o que é necessário para solicitar a 2ª via do 2ª Via?",
+        code: ``,
+        answers: [
+          "Documento do banco autorizando",
+          "Apenas o RG e CPF do proprietário",
+          "A 2ª via não pode ser solicitada",
+          "Quitação antecipada do financiamento",
+        ],
+        correctAnswer: "Apenas o RG e CPF do proprietário",
       },
       {
         question:
-          "Which attribute of an input type of radio links them together to ensure only one is selected?",
-        code: `&lt;input type='radio' ...&gt;`,
-        answers: ["role", "value", "id", "name"],
-        correctAnswer: "name",
+          "Em caso de perda ou furto do documento do veículo, o que é necessário antes de solicitar a 2ª via?",
+        code: ``,
+        answers: [
+          "Fazer um boletim de ocorrência",
+          "Pedir autorização do banco financiador",
+          "Consultar a validade da CNH",
+          "Pagar a taxa sem necessidade de comprovação",
+        ],
+        correctAnswer: "Fazer um boletim de ocorrência",
       },
       {
-        question: "What is the difference between the GET and POST methods?",
-        code: `
-&lt;form method='get'&gt;
-&lt;form method='post'&gt;`,
+        question:
+          "Qual documento é exigido para comprovar a propriedade do veículo no Saneago",
+        code: ``,
         answers: [
-          "The GET method simply retrieves data while POST can send and receive",
-          "The POST method simply submits data while GET can send and receive",
-          "The POST method is used for different database types",
-          "The GET method sends all information in the URL",
+          "Nota fiscal do veículo",
+          "Certificado de Registro de Veículo (CRV)",
+          "CPF do antigo proprietário",
+          "Comprovante de endereço atualizado",
         ],
-        correctAnswer: "The GET method sends all information in the URL",
+        correctAnswer: "Certificado de Registro de Veículo (CRV)",
       },
     ],
     loops: [
       {
-        question: "What are the two types of JavaScript loops?",
+        question:
+          "A 2ª via do 2ª Via digital pode ser acessada por qual aplicativo?",
         code: ``,
         answers: [
-          "loop, cycle",
-          "inclusive, exclusive",
-          "anonymous, declared",
-          "for, while",
+          "Saneago Digital",
+          "Carteira Digital de Trânsito (CDT)",
+          "Meu INSS",
+          "Portal Gov.br",
         ],
-        correctAnswer: "for, while",
-      },
-      {
-        question: "What order do the 3 conditions of a for loop consist of?",
-        code: `for(...;...;...){`,
-        answers: [
-          "variables; start condition; final expression",
-          "variables; counter; function",
-          "iteration; initialization; condition",
-          "initialization; condition; final expression",
-        ],
-        correctAnswer: "initialization; condition; final expression",
-      },
-      {
-        question: "What conditional would we use to run this loop 5 times?",
-        code: `for(let i=0;...; i++){`,
-        answers: ["i===5", "5", "i&lt;=5", "i&lt;5"],
-        correctAnswer: "i&lt;5",
-      },
-      {
-        question: "What happens when a while loop's condition is always true?",
-        code: `while(5===5){ ... }`,
-        answers: [
-          "The execution code will never run",
-          "The execution code will run once",
-          "A syntax error will halt the page at run time",
-          "The execution code will run indefinitely",
-        ],
-        correctAnswer: "The execution code will run indefinitely",
+        correctAnswer: "Carteira Digital de Trânsito (CDT)",
       },
       {
         question:
-          "What will the variable count be equal to at the end of this loop?",
-        code: `
-let count = 0;
-for(let i=0; i&lt;3; i++){
- count+=1;
-}
-return count;`,
-        answers: ["1", "2", "0", "3"],
-        correctAnswer: "3",
+          "Qual é o prazo máximo para pagamento da guia emitida pelo Saneago",
+        code: ``,
+        answers: [
+          "24 horas",
+          "7 dias úteis",
+          "Até a data de vencimento informada no boleto",
+          "Não há prazo definido",
+        ],
+        correctAnswer: "Até a data de vencimento informada no boleto",
+      },
+      {
+        question:
+          "Em caso de dúvidas sobre a taxa, qual o canal mais indicado para obter informações?",
+        code: ``,
+        answers: [
+          "Chat online no site do Saneago",
+          "Ouvidoria da Prefeitura",
+          "Central de atendimento do Saneago",
+          "Aplicativo de mensagens do governo",
+        ],
+        correctAnswer: "Central de atendimento do Saneago",
+      },
+      {
+        question:
+          "É possível solicitar a 2ª via do 2ª Via para veículos com IPVA atrasado?",
+        code: ``,
+        answers: [
+          "Sim, mas apenas presencialmente",
+          "Sim, se o atraso for menor que 30 dias",
+          "Não, é necessário regularizar o IPVA primeiro",
+          "Depende do tipo de veículo",
+        ],
+        correctAnswer: "Não, é necessário regularizar o IPVA primeiro",
+      },
+      {
+        question:
+          "Em qual horário as unidades do Saneago geralmente funcionam para retirada de documentos?",
+        code: ``,
+        answers: [
+          "Das 7h às 12h",
+          "Das 8h às 17h",
+          "Apenas no período da tarde",
+          "Depende da unidade, mas geralmente das 9h às 16h",
+        ],
+        correctAnswer: "Das 8h às 17h",
       },
     ],
     methods: [
       {
-        question:
-          "How do we convert this string of words into an array of the whole words?",
-        code: `let str = 
-"The quick brown fox 
-jumped over the lazy dogs"`,
-        answers: [
-          "str.split()",
-          "str.words('')",
-          "str.convert('')",
-          "str.split(' ')",
-        ],
-        correctAnswer: "str.split(' ')",
-      },
-      {
-        question:
-          "How would we replace the second word in this string with the word 'will'?",
-        code: `let str = "I cannot code well"`,
-        answers: [
-          "str.replace('will', 'cannot')",
-          "str.convert('cannot', 'will')",
-          "str.mask('will', 'cannot')",
-          "str.replace('cannot', 'will')",
-        ],
-        correctAnswer: "str.replace('cannot', 'will')",
-      },
-      {
-        question: "How do you call this object's method?",
-        code: `
-let obj = {
- car: 'Car',
- sayCar: function(){
-  console.log(this.car);
- }
-}`,
-        answers: [
-          "function sayCar(obj)",
-          "obj.function(sayCar)",
-          "sayCar()",
-          "obj.sayCar()",
-        ],
-        correctAnswer: "obj.sayCar()",
-      },
-      {
-        question: "What is a JavaScript method?",
+        question: "Quem é responsável por emitir o 2ª Via-e?",
         code: ``,
         answers: [
-          "A style of writing out code in a readable way",
-          "The HTML tag that allows you to write JavaScript inline",
-          "A type of variable that allows it to be mutable",
-          "A property of an object that executes a function",
+          "Secretaria de Fazenda do Estado",
+          "O proprietário, por meio do sistema digital",
+          "O banco onde foi pago o boleto",
+          "Saneago, após a confirmação do pagamento",
         ],
-        correctAnswer: "A property of an object that executes a function",
+        correctAnswer: "Saneago, após a confirmação do pagamento",
       },
       {
         question:
-          "Why shouldn't we use ES6 arrow functions in object method declarations?",
-        code: `
-let obj = {
- car: "Audi",
- callCar: () =&gt; {
-  return this.car 
- }
-}`,
+          "O que deve ser feito se a guia de pagamento não for gerada corretamente no site do Saneago",
+        code: ``,
         answers: [
-          "Arrow functions provide extra properties that are irrelevant to the object",
-          "Arrow functions require parameters",
-          "Arrow functions are always anonymous",
-          "Arrow functions have a different scope of this than the object",
+          "Fazer login novamente e tentar gerar outra",
+          "Procurar uma unidade presencialmente",
+          "Entrar em contato com o suporte técnico do site",
+          "Aguardar 48 horas para tentar novamente",
         ],
-        correctAnswer:
-          "Arrow functions have a different scope of this than the object",
+        correctAnswer: "Entrar em contato com o suporte técnico do site",
+      },
+      {
+        question:
+          "Qual é o principal motivo para que o pedido de 2ª via seja recusado?",
+        code: ``,
+        answers: [
+          "Documentos do proprietário incompletos",
+          "Pagamento feito fora do prazo",
+          "Débitos ou restrições no veículo",
+          "Solicitação feita em nome de terceiros",
+        ],
+        correctAnswer: "Débitos ou restrições no veículo",
+      },
+      {
+        question:
+          "Em qual seção do site do Saneago você pode solicitar a 2ª via do 2ª Via?",
+        code: ``,
+        answers: [
+          "Renovação de CNH",
+          "Veículos",
+          "Consulta de Infrações",
+          "Atendimento ao Cidadão",
+        ],
+        correctAnswer: "Veículos",
+      },
+      {
+        question:
+          "Qual é o principal meio de recebimento da 2ª via do 2ª Via em formato digital?",
+        code: ``,
+        answers: [
+          "E-mail cadastrado no Saneago",
+          "Aplicativo Carteira Digital de Trânsito (CDT)",
+          "WhatsApp do Saneago",
+          "Download direto do site do Saneago",
+        ],
+        correctAnswer: "Aplicativo Carteira Digital de Trânsito (CDT)",
       },
     ],
     CSS: [
       {
-        question: "What does CSS stand for?",
+        question:
+          "O que acontece se você não portar o 2ª Via durante uma fiscalização?",
         code: ``,
         answers: [
-          "Creative Standard Solution",
-          "Color, Style, Scale",
-          "Compressed Specific Structure",
-          "Cascading Style Sheets",
-        ],
-        correctAnswer: "Cascading Style Sheets",
-      },
-      {
-        question: "How would you set a background color to red?",
-        code: ``,
-        answers: [
-          "backgroundcolor: red",
-          "color: red",
-          "bg-color: red",
-          "background-color: red",
-        ],
-        correctAnswer: "background-color: red",
-      },
-      {
-        question: "What does box-sizing: border box do?",
-        code: `box-sizing: border-box;`,
-        answers: [
-          "Adds a border to the element",
-          "Forces the element to maintain rectangular shape",
-          "Eliminates any properties of an existing border",
-          "Forces the margin, padding, and border dimensions to be inclusive of its width",
+          "O veículo pode ser retido até a apresentação do documento",
+          "Apenas um aviso será emitido",
+          "O motorista será multado e o veículo removido",
+          "Não há penalidade para casos de esquecimento",
         ],
         correctAnswer:
-          "Forces the margin, padding, and border dimensions to be inclusive of its width",
+          "O veículo pode ser retido até a apresentação do documento",
       },
       {
         question:
-          "What is the difference between position: inline and position: inline-block?",
-        code: `
-position: inline;
-position: inline-block;`,
+          "É necessário fazer vistoria no veículo para solicitar a 2ª via do 2ª Via?",
+        code: ``,
         answers: [
-          "inline is only used to define exclusive padding and margin",
-          "inline-block is only used to define additional margins",
-          "inline is used to avoid wrapping elements to different rows on large screens",
-          "inline-block allows a user to define a width and height",
+          "Sim, sempre",
+          "Não, apenas em casos específicos",
+          "Sim, mas somente para veículos com mais de 10 anos",
+          "Não, a vistoria nunca é exigida",
         ],
-        correctAnswer:
-          "inline-block allows a user to define a width and height",
+        correctAnswer: "Não, apenas em casos específicos",
       },
       {
         question:
-          "What color would the the &lt;p id='foo' class='para'&gt; paragraph be?",
-        code: `* { color: cyan; }
-#foo { color: yellow; }
-.para { color: red; }
-p.para { color: blue; }`,
-        answers: ["cyan", "red", "blue", "yellow"],
-        correctAnswer: "yellow",
+          "Qual o nome do documento que substitui o 2ª Via físico atualmente?",
+        code: ``,
+        answers: [
+          "2ª Via Digital (2ª Via-e)",
+          "Documento de Trânsito Nacional",
+          "Registro Digital de Veículos",
+          "CNH Provisória",
+        ],
+        correctAnswer: "2ª Via Digital (2ª Via-e)",
+      },
+      {
+        question:
+          "Quais são as formas de pagamento da taxa de 2ª via aceitas pelo Saneago",
+        code: ``,
+        answers: [
+          "Apenas boleto bancário",
+          "Boleto bancário e cartão de débito",
+          "Boleto, Pix e cartão de crédito",
+          "Apenas cartão de crédito",
+        ],
+        correctAnswer: "Boleto bancário e cartão de débito",
+      },
+      {
+        question: "Solicite 2ª Via Saneago Online?",
+        code: ``,
+        answers: [
+          "Pague Sua 2ª Via do 2ª Via Agora",
+          "Resolva Multas e Emita o 2ª Via",
+          "Guia Rápida para a 2ª Via do Saneago",
+          "Evite Multas: 2ª Via Fácil e Rápido",
+        ],
+        correctAnswer: "Pague Sua 2ª Via do 2ª Via Agora",
       },
     ],
     conditionals: [
       {
-        question: "What are two types of conditional statements in JavaScript?",
+        question: "Emissão Rápida do 2ª Via Digital?",
         code: ``,
         answers: [
-          "if, when",
-          "choice, determined",
-          "switch, then",
-          "if, switch",
+          "Guia Completa para Documentos Saneago",
+          "2ª Via do 2ª Via com Suporte Completo",
+          "Renove Já Seus Documentos no Saneago",
+          "Solicite 2ª Via Saneago Online",
         ],
-        correctAnswer: "if, switch",
+        correctAnswer: "Solicite 2ª Via Saneago Online",
       },
       {
-        question: "What will this conditional statement evaluate to?",
-        code: `if(5&lt;=2){ return true; } 
-else { return false; }`,
-        answers: ["5 &gt; 2", "true", "5 &lt;= 2", "false"],
-        correctAnswer: "false",
-      },
-      {
-        question: "When would you use a switch statement?",
+        question: "Resolva Multas e Emita o 2ª Via?",
         code: ``,
         answers: [
-          "When you want to produce a random outcome",
-          "If there is a variable involved that may change",
-          "When you need to switch a boolean to true or false",
-          "When you need many differing actions for many specific evaluations",
+          "Guia Rápida para a 2ª Via do Saneago",
+          "Evite Multas: 2ª Via Fácil e Rápido",
+          "2ª Via de Documentos no Saneago",
+          "Emissão Rápida do 2ª Via Digital",
         ],
-        correctAnswer:
-          "When you need many differing actions for many specific evaluations",
+        correctAnswer: "Emissão Rápida do 2ª Via Digital",
       },
       {
-        question: "What will this conditional statement evaluate to?",
-        code: `let foo = 1;
-if(foo){ return true; }
-else { return false; }`,
-        answers: ["1", "false", "foo", "true"],
-        correctAnswer: "true",
+        question: "Guia Completa para Documentos Saneago?",
+        code: ``,
+        answers: [
+          "2ª Via do 2ª Via com Suporte Completo",
+          "Renove Já Seus Documentos no Saneago",
+          "Resolva Multas e Emita o 2ª Via",
+          "Guia Rápida para a 2ª Via do Saneago",
+        ],
+        correctAnswer: "Guia Rápida para a 2ª Via do Saneago",
       },
       {
-        question: "What will this conditional statement evaluate to?",
-        code: `let foo = 0;
-if(foo && foo &lt; 5){
- return 1; }
-else if(foo &lt; 5){ 
- return 2; }
-else { 
- return 3; }`,
-        answers: ["1", "3", "false", "2"],
-        correctAnswer: "2",
+        question: "Evite Multas: 2ª Via Fácil e Rápido?",
+        code: ``,
+        answers: [
+          "2ª Via de Documentos no Saneago",
+          "Emissão Rápida do 2ª Via Digital",
+          "Guia Completa para Documentos Saneago",
+          "2ª Via do 2ª Via com Suporte Completo",
+        ],
+        correctAnswer: "2ª Via do 2ª Via com Suporte Completo",
+      },
+      {
+        question: "Renove Já Seus Documentos no Saneago?",
+        code: ``,
+        answers: [
+          "Solicite 2ª Via Saneago Online",
+          "Pague Sua 2ª Via do 2ª Via Agora",
+          "Resolva Multas e Emita o 2ª Via",
+          "Guia Rápida para a 2ª Via do Saneago",
+        ],
+        correctAnswer: "Guia Rápida para a 2ª Via do Saneago",
       },
     ],
     objects: [
       {
-        question: "How do we console.log the value of the make of this car?",
-        code: `let car = {
- year: 2018,
- make: "Audi",
- model: "S4"
-}`,
-        answers: [
-          "console.log(obj.car(make))",
-          "console.log(car(make))",
-          "console.log(make)",
-          "console.log(car.make)",
-        ],
-        correctAnswer: "console.log(car.make)",
-      },
-      {
-        question:
-          "How do we push all of an object's keys into a new array called carProps?",
-        code: `let car = {
- year: 2018,
- make: "Audi",
- model: "S4"
-}`,
-        answers: [
-          "let carProps = car.keys(all)",
-          "let carProps = [Object(car).keys()]",
-          "let carProps = car.Object.keys()",
-          "let carProps = Object.keys(car)",
-        ],
-        correctAnswer: "let carProps = Object.keys(car)",
-      },
-      {
-        question:
-          "What do you call a property of an object that is a function?",
-        code: `let car = {
- year: 2018,
- make: "Audi",
- model: "S4",
- displayName: function(){
-  return this.year +
-      + " "
-      + this.make 
-      + " "
-      + this.model
- }
-}`,
-        answers: [
-          "Object function",
-          "Return function",
-          "Function property",
-          "Object method",
-        ],
-        correctAnswer: "Object method",
-      },
-      {
-        question: "What makes an object different than an array?",
+        question: "Evite Multas: 2ª Via Fácil e Rápido?",
         code: ``,
         answers: [
-          "Objects can contain any data structure, while arrays cannot",
-          "Arrays are only useful as a storage medium, while objects can contain functions",
-          "Arrays are limited to a single dimension, while objects can be nested",
-          "Objects associate keys and values, while arrays are simply a list of data",
+          "2ª Via de Documentos no Saneago",
+          "Emissão Rápida do 2ª Via Digital",
+          "Guia Completa para Documentos Saneago",
+          "2ª Via do 2ª Via com Suporte Completo",
         ],
-        correctAnswer:
-          "Objects associate keys and values, while arrays are simply a list of data",
+        correctAnswer: "2ª Via do 2ª Via com Suporte Completo",
       },
       {
-        question: "What would the following code console.log?",
-        code: `let obj = {
- total: 5,
- multiplier: 4,
- multiply: function(){
-  return 
-   this.total *
-   this.multiplier;
- }
-}
-console.log(obj.multiply()*2);`,
-        answers: ["10", "8", "80", "40"],
-        correctAnswer: "40",
+        question: "Renove Já Seus Documentos no Saneago?",
+        code: ``,
+        answers: [
+          "Solicite 2ª Via Saneago Online",
+          "Pague Sua 2ª Via do 2ª Via Agora",
+          "Resolva Multas e Emita o 2ª Via",
+          "Guia Rápida para a 2ª Via do Saneago",
+        ],
+        correctAnswer: "Guia Rápida para a 2ª Via do Saneago",
+      },
+      {
+        question: "Guia Rápida para a 2ª Via do Saneago?",
+        code: ``,
+        answers: [
+          "Evite Multas: 2ª Via Fácil e Rápido",
+          "2ª Via de Documentos no Saneago",
+          "Emissão Rápida do 2ª Via Digital",
+          "Guia Completa para Documentos Saneago",
+        ],
+        correctAnswer: "2ª Via do 2ª Via com Suporte Completo",
+      },
+      {
+        question: "Renove Já Seus Documentos no Saneago?",
+        code: ``,
+        answers: [
+          "Solicite 2ª Via Saneago Online",
+          "Pague Sua 2ª Via do 2ª Via Agora",
+          "Resolva Multas e Emita o 2ª Via",
+          "Guia Rápida para a 2ª Via do Saneago",
+        ],
+        correctAnswer: "Guia Rápida para a 2ª Via do Saneago",
+      },
+      {
+        question: "Evite Multas: 2ª Via Fácil e Rápido?",
+        code: ``,
+        answers: [
+          "2ª Via de Documentos no Saneago",
+          "Emissão Rápida do 2ª Via Digital",
+          "Guia Completa para Documentos Saneago",
+          "2ª Via do 2ª Via com Suporte Completo",
+        ],
+        correctAnswer: "Guia Completa para Documentos Saneago",
       },
     ],
   },
@@ -705,12 +704,12 @@ function $fade(appState) {
 // Work in progress...
 function $showResults(appState) {
   if (appState.correctAnswers === 10) {
-    let endMsg = `You got ${appState.percCorrect}% correct!
-I have nothing else to teach you. Move on and prosper!
+    let endMsg = `Você está ${appState.percCorrect}% correct!
+Continue tentando!
 `;
   } else {
     $(".answer-btn").remove();
-    let endMsg = `You got ${appState.percCorrect}% correct!`;
+    let endMsg = `Você está ${appState.percCorrect}% correct!`;
     let endFeedback = ``;
     if (appState.progress.incorrectCategories.length === 0) {
       endFeedback = `You aced it! Good job!`;
@@ -869,7 +868,7 @@ function submitAnswer(appState) {
 function killQuiz() {
   $(".start-quiz, .quit-quiz").hide();
   let failureMsg =
-    "You didn't grow. You didn't improve. You took a shortcut and gained nothing. You experienced a hollow victory. Nothing was risked and nothing was gained. It's sad you don't know the difference...";
+    "Você não cresceu. Você não melhorou. Você pegou um atalho e não ganhou nada. Você experimentou uma vitória vazia. Nada foi arriscado e nada foi ganho. É triste que você não saiba a diferença...";
   let msgSplit = failureMsg.split(" ");
   let counter = 0;
   $(".question").empty();
